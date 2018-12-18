@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <script src="js/anim1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+
+  </head>
+
+  <body onload= "startGame();">
+    <h1>Tic-Tac-Toe</h1>
+  <div id="message">Player Turn</div>
+    	<table>
+        	<tr>
+          	  <td id= "s1" class= "Square" onclick="nextMove(this);"></td>
+              <td id= "s2"class= "Square" onclick="nextMove(this);"></td>
+              <td id= "s3"class= "Square" onclick="nextMove(this);"></td>
+          </tr>
+
+          <tr>
+            <td id= "s4" class= "Square" onclick="nextMove(this);"></td>
+            <td id= "s5" class= "Square" onclick="nextMove(this);"></td>
+            <td id= "s6"class= "Square" onclick="nextMove(this);"></td>
+          </tr>
+
+          <tr>
+            <td id= "s7" class= "Square" onclick="nextMove(this);"></td>
+            <td id= "s8" class= "Square" onclick="nextMove(this);"></td>
+            <td id= "s9" class= "Square" onclick="nextMove(this);"></td>
+        	 </tr>
+    	</table>
+
+    <button onClick="startGame();">Reset</button>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+
+h1 {
+  font-family: monospace;
+  font-weight: bold;
+  color: #008080;
+  text-align: center;
+}
+button {
+  text-align: center;
+  background: #008080;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 8px;
+  font-family: monospace;
+  color: #5F9EA0;
+  font-size: 20px;
+  padding: 10px;
+  color: #E0FFFF;
+  border: 10px;
+  margin: 50px auto;
+}
+
+ button:hover {
+  background: #4682B4;
+  cursor: pointer;
+  transition: 1;
+}
+table {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  }
+
+.Square {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  background: #48D1CC;
+  text-align: center;
+}
+
+#message {
+  font-family: monospace;
+  font-size: 20px;
+  color: #008080;
+  margin: 50px auto;
+  padding: auto;
+}

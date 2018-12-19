@@ -1,25 +1,19 @@
 //Basic Tic Tac Toe-------------------------------------------------------
-//who's turn it
-//Break down
-//decide the html interface, canvas/grid/tables
-//
+
 const startGame = function() {
 
     for(let i=1; i<=9; i++){
       clearBox(i);
     }
-    document.turn = "X"; //x'turn, document is for html and turn is var
-    if(Math.random() < 0.5){ //we will use mathrandom function as it generates a random function btween 0 n 1 - so half of time randonly it will be O's turn and X's turn
+    document.turn = "X"; 
+    if(Math.random() < 0.5){ 
       document.turn = "O";
     }
-    //lets tell the user about this variable via a function called setMessage
-    //using that specific func defined below, we are telling the machine, its the X and find the tag with message and pop up on screen with whatever we pass
-    document.winner = null;//whos won the game, saying its emoty value and can be used as true and false in our next move function
+    
+    document.winner = null;
     setMessage(document.turn + " get to start.");
 }
 
-//lets tell the user about this variable and show user the message via function
-//creat a div id message in html where our messae will pop up for the user
 const setMessage = function(msg) {
     document.getElementById("message").innerText = msg;//getElementById will return something with message id - that id's innertext or text equal to msg or what i need
 }
@@ -52,19 +46,13 @@ const switchTurn = function() {
 
     } else {
       document.turn = "X";
-      setMessage("It's " + document.turn + " turn.");//lets show the user
+      setMessage("It's " + document.turn + " turn.");
 
     }
 
 }
 
-////so the user can still overwrite the boxes in addtion to again using the box to entry
-//so we will again go to nectMove function where we can check and stop the user to overwrite the written vale
-
-// now lets figure out the winner combinations when can use can win so we can write a function to handle out the inputs of possible wining combo
-
-//now passing on the winning combinations and we will pass the move as the argument
-const checkforWinner = function (move) { //cpmbo where user can wiin and now we will use thos func in the switchturn
+const checkforWinner = function (move) {
     let result = false;
     if(checkRow(1, 2, 3, move) ||
        checkRow(4, 5, 6, move) ||
@@ -81,30 +69,17 @@ const checkforWinner = function (move) { //cpmbo where user can wiin and now we 
 
 
 const checkRow = function (a, b, c, move) { ///a,b,c entries in grid are equal to a particular move
-    let result = false; //this variable is temp and will return something to us to use in other fucntions
-    //but we have an issue that we dont have any specific id for a single box, box in a, box in a, box in b as in numbered boxes so we create another function called getBox
-    //which would need an id for the boxes, so we will edit out=r table rows with IDs as well is=s1,s2setc
-    if ( getBox(a) == move && getBox(b) == move && getBox(c) == move ) {
-    result = true;//so this if statement will check about the valus in all those boxes, and return true but now we need to pass on the values so we will make another function
+    let result = false;     if ( getBox(a) == move && getBox(b) == move && getBox(c) == move ) {
+    result = true;
   }
     return result;
 }
 
-const getBox = function(number) { // number is the parameter of that elementby id we are calling below
-    return document.getElementById("s" + number).innerText; //document give us the inner text/value of the element with id s and its number
+const getBox = function(number) { 
+    return document.getElementById("s" + number).innerText; 
 }
 
-//x shouldnt go first all the time - so we used mathrandom function in the beginning
-//now instead of having to refresh over n over by ourselves, we will create another function called clear
 
 const clearBox = function (number) {
     document.getElementById("s" + number).innerText = ""; //it will clear that box n we will use it in startgame
 }
-//
-// const checkforDraw = function () {
-//       for count=0; count
-//       for while( document.getElementById("s").innerText != null) {
-//         count = count++;
-//       }
-//       return count;
-// }

@@ -15,11 +15,9 @@ const startGame = function() {
 }
 
 const setMessage = function(msg) {
-    document.getElementById("message").innerText = msg;//getElementById will return something with message id - that id's innertext or text equal to msg or what i need
+    document.getElementById("message").innerText = msg;
 }
 
-//onclick in the table rows is the interactive function of nextMove(this) - this means its taking this tag we aer dealing now and it will pass it tot the called dunction as the parametr
-//so the parameter will be we know a square or the table row we cerated
 const nextMove = function(square) {
   ///just checking if the input box is empty to avoid the overwriitng of a box
     if(document.winner != null){
@@ -27,18 +25,16 @@ const nextMove = function(square) {
     } else if (square.innerText == ""){
     square.innerText = document.turn;
     switchTurn();//calling the turn switch function
-    //square innertext means, take that tablerow/square and make that equal to our varable documemt.turn which means X turn to nextMove
-    //but we cant have X alawys entr so we write another function called switchturn
+    
   } else {
       setMessage("That space is already used.");
   }
 }
 
-//for seitchturn function, simple if the imput is x, turnt hat into o if not x then turn it into x
 const switchTurn = function() {
-  //now we are using the win combinations before letting the user enter new value
-    if(checkforWinner(document.turn)) {//this check means if checkforWinner is returning true or false
-        setMessage("Congratulation, " + document.turn + "! You WON!");//if we have a winner congratulate them and if not move to else
+ 
+    if(checkforWinner(document.turn)) {
+        setMessage("Congratulation, " + document.turn + "! You WON!");
         document.winner = document.turn;
     } else if(document.turn == "X"){
         document.turn = "O";

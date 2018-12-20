@@ -25,6 +25,7 @@ h1 {
   text-align: center;
   font-size: 80px;
   text-shadow: 4px 2px 2px #E0FFFF;
+  margin: auto;
 }
 button {
   background: #008080;

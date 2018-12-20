@@ -1,35 +1,60 @@
 
-h1 {
-  font-family: monospace;
-  font-weight: bold;
-  color: #008080;
-  text-align: center;
-}
 button {
-  text-align: center;
   background: #008080;
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   border-radius: 8px;
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   color: #5F9EA0;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: auto;
+  margin: 15px auto;
+}
+body{
+  display: center;
+  margin: auto;
+  background-size: cover;
+  background-image: url("sil.jpg");
+  /* background-color: #00FFFF; */
+}
+h1 {
+  font-family: 'Courgette', cursive;
+  font-weight: bolder;
+  color: #5F9EA0	;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 4px 2px 2px #E0FFFF;
+}
+button {
+  background: #008080;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 8px;
+  font-family: 'Courgette', cursive;
+  color: #5F9EA0;
+  font-size: 25px;
   padding: 10px;
   color: #E0FFFF;
   border: 10px;
-  margin: 50px auto;
+  margin: 5px auto;
 }
 
  button:hover {
-  background: #4682B4;
+  background: lightseagreen;
   cursor: pointer;
   transition: 1;
 }
 table {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin: auto;
+  background-color: #E0FFFF;
+  border-radius: 10px;
   }
+td:hover {
+  background-color: lightseagreen;
+}
 
 .Square {
   width: 50px;
@@ -41,12 +66,16 @@ table {
   cursor: pointer;
   background: #48D1CC;
   text-align: center;
+  border-radius: 15px;
 }
 
 #message {
-  font-family: monospace;
-  font-size: 20px;
-  color: #008080;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  color: #5F9EA0	;
   margin: 50px auto;
   padding: auto;
+  text-shadow: 4px 2px 2px #E0FFFF;
+
 }

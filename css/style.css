@@ -1,63 +1,70 @@
 
-button {
-  background: #008080;
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 8px;
-  font-family: 'Courgette', cursive;
-  color: #5F9EA0;
-  font-size: 30px;
-  font-weight: bold;
-  padding: auto;
-  margin: 15px auto;
-}
-body{
-  display: center;
-  margin: auto;
-  background-size: cover;
-  background-image: url("sil.jpg");
-  /* background-color: #00FFFF; */
-}
-h1 {
-  font-family: 'Courgette', cursive;
-  font-weight: bolder;
-  color: #5F9EA0	;
-  text-align: center;
-  font-size: 80px;
-  text-shadow: 4px 2px 2px #E0FFFF;
-  margin: auto;
-}
-button {
-  background: #008080;
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 8px;
-  font-family: 'Courgette', cursive;
-  color: #5F9EA0;
-  font-size: 25px;
-  padding: 10px;
-  color: #E0FFFF;
-  border: 10px;
-  margin: 5px auto;
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
- button:hover {
-  background: lightseagreen;
-  cursor: pointer;
-  transition: 1;
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 table {
   width: 500px;
   height: 500px;
   margin: auto;
-  background-color: #E0FFFF;
+  /* background-color: #E0FFFF; */
   border-radius: 10px;
   }
 td:hover {
-  background-color: lightseagreen;
-}
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+  }
 
-.Square {
+.Square1 {
+  padding-top: 15px;
   width: 50px;
   height: 50px;
   font-size: 40px;
@@ -65,18 +72,149 @@ td:hover {
   font-family: sans-serif;
   color: #E0FFFF;
   cursor: pointer;
-  background: #48D1CC;
   text-align: center;
-  border-radius: 15px;
+  border-right: 2px solid black;
+}
+
+.Square2 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  border-right: 2px solid black;
+}
+.Square3 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  /* border-right: 1px solid black; */
+
+}
+.Square4 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+}
+.Square5 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+
+}
+.Square6 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  /* border-right: 1px solid black; */
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.Square7 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  border-right: 2px solid black;
+}
+.Square8 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  border-right: 2px solid black;
+}
+.Square9 {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #E0FFFF;
+  cursor: pointer;
+  text-align: center;
+  /* border-right: 1px solid black; */
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: whitw	;
+  margin: 50px auto;
+  padding: auto;
+  text-align: center;
 }
 
 #message {
-  font-family: 'Courgette', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  font-size: 35px;
-  color: #5F9EA0	;
+  font-size: 30px;
+  color: white;
   margin: 50px auto;
   padding: auto;
-  text-shadow: 4px 2px 2px #E0FFFF;
+  text-align: center;
+}
 
+
+
+.example_d {
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+font-size: 1em;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+}
+
+.example_d:hover {
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
 }

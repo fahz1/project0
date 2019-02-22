@@ -9,11 +9,10 @@ const startGame = function() {
    setMessage("Select Player");
 }
 
-//-----------------------------------------------------------
-    const setMessage = function(msg) {
+const setMessage = function(msg) {
     document.getElementById("message").innerHTML = msg;
-    }
-//-----------------------------------------------------------
+}
+
 const nextMove = function(square) {
   count++;
 
@@ -35,6 +34,9 @@ const nextMove = function(square) {
     const switchTurn = function() {
       if(checkforWinner(document.turn)) {
         setMessage("Congratulation, " + document.turn + "! You WON!");
+        won();
+        // document.body.style.background = 'url("css/won.gif") no-repeat center center';
+
         document.winner = document.turn;
       } else if(document.turn == "X"){
       document.turn = "O";
@@ -90,4 +92,9 @@ const xStarts = function(){
 
 const oStarts = function (){
   document.turn = "O";
+}
+
+const won = function () {
+  document.body.style.background = 'url("css/won.gif") no repeat';
+
 }

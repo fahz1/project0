@@ -4,46 +4,48 @@
     <meta charset="utf-8">
     <title>Project-zero</title>
     <script src="js/anim1.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
 
   <body onload="startGame();">
 
 
-    <h1 class="animated swing">Tic-Tac-Toe</h1>
-    <!-- <h1>Tic-Tac-Toe</h1> -->
+    <h1>Tic-Tac-Toe</h1>
   <div style="text-align: center">
-    <div class="animated bounceInDown" id="message">Select first Player</div>
-    <div class="animated hinge" id="message1" width=" 50px"></div>
-    <button class="animated bounceInDown" id="btnx" onclick="xStarts();" width= '100px' >Player X</button>
-    <button class="animated bounceInDown" id="btno" onclick="oStarts();" width= '100px'>Player O</button>
+    <div id="message">Select first Player</div>
+    <div id="message1" width=" 50px"></div>
+    <div align="center">
+      <button class="example_d" id="btnx" onclick="xStarts();">Cross X</button>
+      <button class="example_d" id="btno" onclick="oStarts();">nought O</button>
+    </div>
+
 
   </div>
 
-    	<table class="animated bounceInDown delay -2s">
+    	<table>
         	<tr>
-          	  <td id= "s1" class= "Square" onclick="nextMove(this);"></td>
-              <td id= "s2" class= "Square" onclick="nextMove(this);"></td>
-              <td id= "s3" class= "Square" onclick="nextMove(this);"></td>
+          	  <td id= "s1" class= "Square1" onclick="nextMove(this);"></td>
+              <td id= "s2" class= "Square2" onclick="nextMove(this);"></td>
+              <td id= "s3" class= "Square3" onclick="nextMove(this);"></td>
           </tr>
 
           <tr>
-            <td id= "s4" class= "Square" onclick="nextMove(this);"></td>
-            <td id= "s5" class= "Square" onclick="nextMove(this);"></td>
-            <td id= "s6" class= "Square" onclick="nextMove(this);"></td>
+            <td id= "s4" class= "Square4" onclick="nextMove(this);"></td>
+            <td id= "s5" class= "Square5" onclick="nextMove(this);"></td>
+            <td id= "s6" class= "Square6" onclick="nextMove(this);"></td>
           </tr>
 
           <tr>
-            <td id= "s7" class= "Square" onclick="nextMove(this);"></td>
-            <td id= "s8" class= "Square" onclick="nextMove(this);"></td>
-            <td id= "s9" class= "Square" onclick="nextMove(this);"></td>
+            <td id= "s7" class= "Square7" onclick="nextMove(this);"></td>
+            <td id= "s8" class= "Square8" onclick="nextMove(this);"></td>
+            <td id= "s9" class= "Square9" onclick="nextMove(this);"></td>
         	 </tr>
     	</table>
-      <div style="text-align: center">
-        <button class="animated bounceInDown" onclick="startGame();">Reset</button>
+
+
+      <div align="center">
+        <button class="example_d" onclick="startGame();">Reset</button>
       </div>
 
   </body>

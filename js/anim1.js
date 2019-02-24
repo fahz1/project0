@@ -14,22 +14,27 @@ const setMessage = function(msg) {
 }
 
 const nextMove = function(square) {
-  count++;
-
-  if(document.winner == null && count == 9){
-    setMessage("Game Draw");
+  if (document.turn == null) {
+    setMessage("Choose a player first!");
+    // alert("CHOSE A PLAYER FIRST");
     return;
-
   }
+
     if(document.winner != null){
         setMessage(document.winner + " already Won the game.");
     } else if (square.innerHTML == ""){
-    square.innerHTML = document.turn;
-    switchTurn();
-      } else {
+      square.innerHTML = document.turn;
+      count++;
+      switchTurn();
+    } else {
           setMessage("That space is already used.");
-      }
     }
+    if(document.winner == null && count == 9){
+      setMessage("Game Draw");
+      return;
+
+    }
+  }
     //-----------------------------------------------------------
     const switchTurn = function() {
       if(checkforWinner(document.turn)) {
